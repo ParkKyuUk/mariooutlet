@@ -36,8 +36,8 @@ void APlayerCPP::Tick(float DeltaTime)
 
 
 	//사용자가 입력한 방향으로 이동하고 싶다
-	// 1. 방향이 있어야한다 + 중력을 받아 떨어진다
-	FVector Dir(0, h, -2);
+	// 1. 방향이 있어야한다
+	FVector Dir(0, h, 0);
 
 	// 2. 이동하고 싶다. 등속운동 P=P0+Vt
 	SetActorLocation(GetActorLocation() + Dir * MoveSpeed * DeltaTime);
